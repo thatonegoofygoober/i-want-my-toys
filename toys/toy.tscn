@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://ch4bx8mymopt2"]
+
+[ext_resource type="Script" uid="uid://cv6usqwwvwwgr" path="res://scripts/toy.gd" id="1_4kfnp"]
+[ext_resource type="Texture2D" uid="uid://bdiq6g4je8kaa" path="res://OIP (1).jpg" id="2_drb5t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ljxe0"]
+size = Vector2(100, 111)
+
+[node name="teddy_bear" type="CharacterBody2D" unique_id=1845246820 node_paths=PackedStringArray("button", "collision") groups=["toys"]]
+collision_layer = 3
+collision_mask = 3
+collision_priority = 3.72
+input_pickable = true
+script = ExtResource("1_4kfnp")
+gravity_weight = 2000.0
+button = NodePath("Button")
+collision = NodePath("CollisionShape2D")
+metadata/_custom_type_script = "uid://cv6usqwwvwwgr"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1664968589]
+shape = SubResource("RectangleShape2D_ljxe0")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=628884782]
+position = Vector2(1.9999981, 2.000002)
+scale = Vector2(0.53899145, 0.5644176)
+texture = ExtResource("2_drb5t")
+
+[node name="Button" type="Button" parent="." unique_id=1184654829]
+modulate = Color(1, 1, 1, 0)
+offset_left = -77.0
+offset_top = -76.0
+offset_right = 87.0
+offset_bottom = 84.0

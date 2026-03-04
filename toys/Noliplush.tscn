@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://j18i764g5cx0"]
+
+[ext_resource type="Script" uid="uid://cv6usqwwvwwgr" path="res://scripts/toy.gd" id="1_ttfby"]
+[ext_resource type="Texture2D" uid="uid://c46whdoeagerd" path="res://The bird .png" id="2_atl52"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_atl52"]
+size = Vector2(198, 157)
+
+[node name="Noliplush" type="CharacterBody2D" unique_id=506491750 node_paths=PackedStringArray("button", "collision")]
+script = ExtResource("1_ttfby")
+button = NodePath("Button")
+collision = NodePath("CollisionShape2D")
+metadata/_custom_type_script = "uid://cv6usqwwvwwgr"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1647198596]
+position = Vector2(-8, -1.5)
+shape = SubResource("RectangleShape2D_atl52")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2006299207]
+position = Vector2(0, 3.0000153)
+scale = Vector2(0.43359375, 0.4765625)
+texture = ExtResource("2_atl52")
+
+[node name="Button" type="Button" parent="." unique_id=992672372]
+modulate = Color(1, 1, 1, 0)
+offset_left = -108.0
+offset_top = -81.0
+offset_right = 113.0
+offset_bottom = 80.0
