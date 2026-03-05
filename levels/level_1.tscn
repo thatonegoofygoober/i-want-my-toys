@@ -1148,7 +1148,8 @@ tile_set = SubResource("TileSet_08mmt")
 
 [node name="Camera2D" parent="." unique_id=691893083 instance=ExtResource("7_l53as")]
 position = Vector2(583, 383)
-position_smoothing_enabled = true
+zoom = Vector2(0.7, 0.7)
+position_smoothing_speed = 0.0
 
 [node name="Control" type="Control" parent="Camera2D" unique_id=84199633]
 layout_mode = 3
