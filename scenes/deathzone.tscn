@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cujemosqglwk1"]
+
+[ext_resource type="Script" uid="uid://dgo8532kshdna" path="res://scripts/area_2d.gd" id="1_g3cgl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xw4d1"]
+size = Vector2(33486, 1463)
+
+[node name="deathzone" type="Area2D" unique_id=1499393473]
+collision_mask = 3
+script = ExtResource("1_g3cgl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1939842727]
+shape = SubResource("RectangleShape2D_xw4d1")
+debug_color = Color(0.8464966, 0.00049035606, 0.8307216, 0.41960785)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -19,9 +19,20 @@ config/icon="res://icon.svg"
 
 window/stretch/mode="canvas_items"
 
+[file_customization]
+
+folder_colors={
+"res://Assets/": "red",
+"res://levels/": "orange",
+"res://scenes/": "yellow",
+"res://scripts/": "green",
+"res://toys/": "pink"
+}
+
 [global_group]
 
 toys=""
+camera=""
 
 [input]
 

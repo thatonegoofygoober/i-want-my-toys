@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://j18i764g5cx0"]
 
 [ext_resource type="Script" uid="uid://cv6usqwwvwwgr" path="res://scripts/toy.gd" id="1_ttfby"]
-[ext_resource type="Texture2D" uid="uid://c46whdoeagerd" path="res://The bird .png" id="2_atl52"]
+[ext_resource type="Texture2D" uid="uid://c46whdoeagerd" path="res://Assets/sprites/toys/The bird .png" id="2_atl52"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_atl52"]
 size = Vector2(198, 157)
 
-[node name="Noliplush" type="CharacterBody2D" unique_id=506491750 node_paths=PackedStringArray("button", "collision")]
+[node name="Noliplush" type="CharacterBody2D" unique_id=506491750 node_paths=PackedStringArray("button", "collision") groups=["toys"]]
 script = ExtResource("1_ttfby")
 button = NodePath("Button")
 collision = NodePath("CollisionShape2D")
