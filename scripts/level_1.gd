@@ -1,7 +1,7 @@
 extends Node2D
 @export var collected : int = clamp(0,0,max_co)
 @export var max_co : int = 4
-@export var time : float = clamp(30,0,30)
+@export var time : float = clamp(35,0,35)
 var total_time : int = 30
 @onready var co_text = $Camera2D/Control/CanvasLayer/Label
 @onready var count_text = $Camera2D/Control/CanvasLayer/Label2
@@ -19,7 +19,7 @@ func _process(delta: float) -> void:
 
 func _countdown(t):
 	time -= t
-	time = clamp(time,0,30)
+	time = clamp(time,0,35)
 	
 	count_text.text = str(int(time),"left")
 	if time == 0 and collected <max_co:

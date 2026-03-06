@@ -7348,9 +7348,9 @@ max_co = 5
 
 [node name="ColorRect" type="ColorRect" parent="bg/room1" unique_id=1241741479]
 z_index = -5
-offset_left = -2032.0
-offset_top = -1705.0
-offset_right = 5525.0
+offset_left = -20526.0
+offset_top = -19160.0
+offset_right = 10917.0
 offset_bottom = 3099.0
 mouse_filter = 2
 
@@ -7362,6 +7362,9 @@ offset_right = 5709.0
 offset_bottom = 3189.0
 mouse_filter = 2
 color = Color(0.70458007, 0.40469977, 0.113630615, 1)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="bg/room1" unique_id=80913652]
+color = Color(0.2285108, 0.2285108, 0.2285108, 1)
 
 [node name="room2" type="Node2D" parent="bg" unique_id=750927633]
 
@@ -7464,3 +7467,12 @@ position = Vector2(-221, 469)
 [node name="box" parent="." unique_id=1541108313 node_paths=PackedStringArray("parent") instance=ExtResource("16_bgw3c")]
 position = Vector2(500, 460)
 parent = NodePath("..")
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="." unique_id=1361858916]
+rotation = 3.1415927
+color = Color(1, 0.8319831, 0.68010587, 1)
+energy = 0.7
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 1)
+shadow_filter_smooth = 20.0
+height = 0.3

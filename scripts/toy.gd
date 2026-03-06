@@ -24,7 +24,7 @@ func _on_button_up():
 func _on_button_down(): 
 	print("button pressingh")
 	grabbed = true
-	of = lerp(get_global_mouse_position(), - global_position,0.55)
+	of = get_global_mouse_position() - global_position
 	size_change = lerp(size_change,Vector2(1.5,1.5),0.5) 
 
 
