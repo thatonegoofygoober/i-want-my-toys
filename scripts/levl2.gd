@@ -1,7 +1,8 @@
+
 extends Node2D
 @export var collected : int = clamp(0,0,max_co)
 @export var max_co : int = 4
-@export var time : float = clamp(30,0,30)
+@export var time : float = clamp(40,0,40)
 var total_time : int = 30
 @onready var co_text = $Camera2D/Control/CanvasLayer/Label
 @onready var count_text = $Camera2D/Control/CanvasLayer/Label2
@@ -13,13 +14,13 @@ var color_time :float = 0.0
 func _process(delta: float) -> void:
 	
 	_collecter()
-	_countdown(delta) 
+	_countdown(delta)
 
 
 
 func _countdown(t):
 	time -= t
-	time = clamp(time,0,30)
+	time = clamp(time,0,35)
 	
 	count_text.text = str(int(time),"left")
 	if time == 0 and collected <max_co:
@@ -48,6 +49,6 @@ func _collecter():
 
 		co_text.text  = str("COLLECTED: ",collected," /",max_co," you found all toys!!!")
 		await get_tree().create_timer(3).timeout
-		get_tree().change_scene_to_file("res://levels/level_2.tscn")
+		get_tree().reload_current_scene()
 	if collected + 1 and collected !=max_co:
 		co_text.text  = str("COLLECTED: ",collected," /",max_co)

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://djxaum6c023de"]
+
+[ext_resource type="Texture2D" uid="uid://y3i2yxp8lkft" path="res://Assets/sprites/decos/Trashcan.png" id="1_0hul3"]
+
+[node name="Trash" type="Node2D" unique_id=443766302]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1763847616]
+position = Vector2(-2, 3)
+scale = Vector2(1.6484375, 1.6640625)
+texture = ExtResource("1_0hul3")

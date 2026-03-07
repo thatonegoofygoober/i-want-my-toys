@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bjcwxl7ukw5l5"]
+
+[ext_resource type="Texture2D" uid="uid://drd0avbucvdey" path="res://Assets/sprites/decos/Couch.png" id="1_nhhc1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5kbce"]
+size = Vector2(432, 52)
+
+[node name="couch" type="Node2D" unique_id=443766302]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1317769798]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1559998721]
+position = Vector2(-4, 11)
+shape = SubResource("RectangleShape2D_5kbce")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1763847616]
+texture = ExtResource("1_nhhc1")

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b3qpdc3vv0e8n"]
+
+[ext_resource type="Script" uid="uid://do680dtq33ja7" path="res://scripts/toy_randomizer.gd" id="1_1ykxc"]
+
+[node name="Toy_randomizer" type="Node2D" unique_id=837100193]
+script = ExtResource("1_1ykxc")
