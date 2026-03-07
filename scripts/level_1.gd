@@ -1,6 +1,6 @@
 extends Node2D
 @export var collected : int = clamp(0,0,max_co)
-@export var max_co : int = 4
+@export var max_co : int = 5
 @export var time : float = clamp(30,0,30)
 var total_time : int = 30
 @onready var co_text = $Camera2D/Control/CanvasLayer/Label
