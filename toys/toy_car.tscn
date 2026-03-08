@@ -7,6 +7,7 @@
 size = Vector2(113, 114)
 
 [node name="toy_car" type="CharacterBody2D" unique_id=1571914932 node_paths=PackedStringArray("button", "collision")]
+z_index = -1
 script = ExtResource("1_ms48h")
 button = NodePath("Button")
 collision = NodePath("CollisionShape2D")

@@ -7,6 +7,7 @@
 size = Vector2(198, 157)
 
 [node name="Noliplush" type="CharacterBody2D" unique_id=506491750 node_paths=PackedStringArray("button", "collision") groups=["toys"]]
+z_index = 1
 script = ExtResource("1_ttfby")
 button = NodePath("Button")
 collision = NodePath("CollisionShape2D")

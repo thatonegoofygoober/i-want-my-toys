@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://crjyhauhn0g5v"]
+
+[ext_resource type="Texture2D" uid="uid://lek2aspe3u1d" path="res://Assets/sprites/decos/bookshelf.png" id="1_udf5s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_udf5s"]
+size = Vector2(356, 36)
+
+[node name="bookshelf" type="Node2D" unique_id=443766302]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1317769798]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1548479621]
+position = Vector2(7, -128)
+shape = SubResource("RectangleShape2D_udf5s")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=528156585]
+position = Vector2(7, -7)
+shape = SubResource("RectangleShape2D_udf5s")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=590021302]
+position = Vector2(7, 105)
+shape = SubResource("RectangleShape2D_udf5s")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=623821365]
+position = Vector2(7, 222)
+shape = SubResource("RectangleShape2D_udf5s")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1763847616]
+texture = ExtResource("1_udf5s")

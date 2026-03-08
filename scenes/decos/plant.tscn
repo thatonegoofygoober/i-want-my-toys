@@ -1,20 +1,20 @@
-[gd_scene format=3 uid="uid://c3hdn0ngcgxxa"]
+[gd_scene format=3 uid="uid://d4kstmttnmj6s"]
 
-[ext_resource type="Texture2D" uid="uid://nomuq8gssjfc" path="res://Assets/sprites/decos/chair.png" id="1_cm8cd"]
+[ext_resource type="Texture2D" uid="uid://ctvmx88vnn526" path="res://Assets/sprites/decos/plant.png" id="1_o1cyy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5kbce"]
-size = Vector2(142, 15.25)
+size = Vector2(225, 17)
 
 [node name="couch" type="Node2D" unique_id=443766302]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1763847616]
 position = Vector2(-1, 1)
 scale = Vector2(1.2045455, 1.1136364)
-texture = ExtResource("1_cm8cd")
+texture = ExtResource("1_o1cyy")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1317769798]
 position = Vector2(-3, -1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1559998721]
-position = Vector2(3, 3.625)
+position = Vector2(7.5, 73)
 shape = SubResource("RectangleShape2D_5kbce")

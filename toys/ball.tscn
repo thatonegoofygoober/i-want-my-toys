@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://7e2tbmas3q7d"]
+
+[ext_resource type="Script" uid="uid://cv6usqwwvwwgr" path="res://scripts/toy.gd" id="1_3qi5n"]
+[ext_resource type="Texture2D" uid="uid://dn3wcl052kddj" path="res://Assets/sprites/toys/mycoolball.png" id="2_16o61"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hmx37"]
+radius = 133.7236
+
+[node name="ball" type="CharacterBody2D" unique_id=352205385 node_paths=PackedStringArray("button", "collision")]
+script = ExtResource("1_3qi5n")
+gravity_weight = 2000.0
+button = NodePath("Button")
+collision = NodePath("CollisionShape2D")
+metadata/_custom_type_script = "uid://cv6usqwwvwwgr"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=641024132]
+texture = ExtResource("2_16o61")
+
+[node name="Button" type="Button" parent="." unique_id=1603518379]
+modulate = Color(1, 1, 1, 0)
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 136.0
+offset_bottom = 136.0
+icon = ExtResource("2_16o61")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1468337936]
+shape = SubResource("CircleShape2D_hmx37")

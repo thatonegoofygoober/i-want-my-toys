@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cq1a1wb0ulwp8"]
+
+[ext_resource type="Script" uid="uid://cv6usqwwvwwgr" path="res://scripts/toy.gd" id="1_1nb0v"]
+[ext_resource type="Texture2D" uid="uid://e2vchmfj7ka2" path="res://Assets/sprites/toys/toy_blocks.png" id="2_wvimn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sqka5"]
+size = Vector2(225, 247)
+
+[node name="block" type="CharacterBody2D" unique_id=2022669577 node_paths=PackedStringArray("button", "collision")]
+script = ExtResource("1_1nb0v")
+button = NodePath("Button")
+collision = NodePath("CollisionShape2D")
+metadata/_custom_type_script = "uid://cv6usqwwvwwgr"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1893298932]
+texture = ExtResource("2_wvimn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=168542855]
+position = Vector2(-11.5, -8.5)
+shape = SubResource("RectangleShape2D_sqka5")
+
+[node name="Button" type="Button" parent="." unique_id=1553430186]
+modulate = Color(1, 1, 1, 0)
+offset_left = -128.0
+offset_top = -138.0
+offset_right = 105.0
+offset_bottom = 116.0

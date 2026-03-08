@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://c5doh53jqsc0n"]
+[gd_scene format=4 uid="uid://ceg6mwovhrpb2"]
 
 [ext_resource type="Script" uid="uid://ctw2dtfs0opkn" path="res://scripts/levl2.gd" id="1_5orea"]
 [ext_resource type="Texture2D" uid="uid://e2xec58quw7r" path="res://icon.svg" id="2_k2aru"]
@@ -7430,7 +7430,7 @@ tile_set = SubResource("TileSet_06ecp")
 y_sort_origin = 5
 
 [node name="decos" type="TileMapLayer" parent="rooms" unique_id=1176522881]
-z_index = -2
+y_sort_enabled = true
 tile_map_data = PackedByteArray("AADL/8v/AAAAAAAAAADL/8z/AAAAAAEAAADL/83/AAAAAAIAAADM/8v/AAABAAAAAADM/8z/AAABAAEAAADM/83/AAABAAIAAADN/8v/AAACAAAAAADN/8z/AAACAAEAAADN/83/AAACAAIAAADO/8v/AAADAAAAAADO/8z/AAADAAEAAADO/83/AAADAAIAAADP/8v/AAAEAAAAAADP/8z/AAAEAAEAAADP/83/AAAEAAIAAADQ/8v/AAAFAAAAAADQ/8z/AAAFAAEAAADQ/83/AAAFAAIAAADR/8v/AAAGAAAAAADR/8z/AAAGAAEAAADR/83/AAAGAAIAAADS/8v/AAAHAAAAAADS/8z/AAAHAAEAAADS/83/AAAHAAIAAACLAMv/AAAAAAAAAACLAMz/AAAAAAEAAACLAM3/AAAAAAIAAACMAMv/AAABAAAAAACMAMz/AAABAAEAAACMAM3/AAABAAIAAACNAMv/AAACAAAAAACNAMz/AAACAAEAAACNAM3/AAACAAIAAACOAMv/AAADAAAAAACOAMz/AAADAAEAAACOAM3/AAADAAIAAACPAMv/AAAEAAAAAACPAMz/AAAEAAEAAACPAM3/AAAEAAIAAACQAMv/AAAFAAAAAACQAMz/AAAFAAEAAACQAM3/AAAFAAIAAACRAMv/AAAGAAAAAACRAMz/AAAGAAEAAACRAM3/AAAGAAIAAACSAMv/AAAHAAAAAACSAMz/AAAHAAEAAACSAM3/AAAHAAIAAABuACMABQAAAAAAAQDk/yYABQAAAAAAAwCFACUABQAAAAAABQBB/yYABQAAAAAABQCM/yQABQAAAAAAAQCBAPb/BQAAAAAAAgDi//T/BQAAAAAAAgA///L/BQAAAAAAAgCZ/9n/BQAAAAAAAgCkASYABQAAAAAABAACASYABQAAAAAAAwD7AOj/BQAAAAAAAgBYASUABQAAAAAABQA2ASMABQAAAAAAAQCnAej/BQAAAAAAAgAHAbP/BQAAAAAAAgB4AM3/BQAAAAAAAgA=")
 tile_set = SubResource("TileSet_5ot28")
 
@@ -7471,25 +7471,23 @@ text = "."
 [node name="Toys" type="Node2D" parent="." unique_id=822556461]
 position = Vector2(-696, -1473)
 
-[node name="Noliplush" parent="Toys" unique_id=506491750 instance=ExtResource("20_he6wg")]
-
-[node name="Noliplush2" parent="Toys" unique_id=1320478623 instance=ExtResource("20_he6wg")]
-
-[node name="Noliplush3" parent="Toys" unique_id=233081812 instance=ExtResource("20_he6wg")]
-
 [node name="teddy_bear" parent="Toys" unique_id=1845246820 instance=ExtResource("19_xrja0")]
 
-[node name="teddy_bear2" parent="Toys" unique_id=124257488 instance=ExtResource("19_xrja0")]
+[node name="teddy_bear2" parent="Toys" unique_id=1223261658 instance=ExtResource("19_xrja0")]
 
-[node name="teddy_bear3" parent="Toys" unique_id=401976287 instance=ExtResource("19_xrja0")]
+[node name="teddy_bear3" parent="Toys" unique_id=250064173 instance=ExtResource("19_xrja0")]
 
 [node name="toy_car" parent="Toys" unique_id=1571914932 instance=ExtResource("18_itbe0")]
 
-[node name="toy_car4" parent="Toys" unique_id=427832145 instance=ExtResource("18_itbe0")]
+[node name="toy_car2" parent="Toys" unique_id=462373819 instance=ExtResource("18_itbe0")]
 
-[node name="toy_car2" parent="Toys" unique_id=1798302183 instance=ExtResource("18_itbe0")]
+[node name="toy_car3" parent="Toys" unique_id=2021409265 instance=ExtResource("18_itbe0")]
 
-[node name="toy_car3" parent="Toys" unique_id=1794447830 instance=ExtResource("18_itbe0")]
+[node name="Noliplush" parent="Toys" unique_id=506491750 instance=ExtResource("20_he6wg")]
+
+[node name="Noliplush2" parent="Toys" unique_id=1548827928 instance=ExtResource("20_he6wg")]
+
+[node name="Noliplush3" parent="Toys" unique_id=1964339433 instance=ExtResource("20_he6wg")]
 
 [node name="deathzone" parent="." unique_id=1499393473 node_paths=PackedStringArray("fall_back_pos") instance=ExtResource("16_4xp61")]
 position = Vector2(108, 1696)
@@ -7512,10 +7510,10 @@ shadow_filter_smooth = 20.0
 height = 0.3
 
 [node name="Toy_randomizer" parent="." unique_id=837100193 node_paths=PackedStringArray("toys", "markers") instance=ExtResource("20_h351q")]
-toys = [NodePath("../Toys/Noliplush"), NodePath("../Toys/Noliplush2"), NodePath("../Toys/Noliplush3"), NodePath("../Toys/teddy_bear"), NodePath("../Toys/teddy_bear2"), NodePath("../Toys/teddy_bear3"), NodePath("../Toys/toy_car"), NodePath("../Toys/toy_car4"), NodePath("../Toys/toy_car2"), NodePath("../Toys/toy_car3")]
+toys = [NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath("")]
 markers = [NodePath("../markers/Marker2D"), NodePath("../markers/Marker2D2"), NodePath("../markers/Marker2D3"), NodePath("../markers/Marker2D4"), NodePath("../markers/Marker2D5"), NodePath("../markers/Marker2D6"), NodePath("../markers/Marker2D7"), NodePath("../markers/Marker2D8"), NodePath("../markers/Marker2D9"), NodePath("../markers/Marker2D10"), NodePath("../markers/Marker2D11"), NodePath("../markers/Marker2D12"), NodePath("../markers/Marker2D13"), NodePath("../markers/Marker2D14"), NodePath("../markers/Marker2D15"), NodePath("../markers/Marker2D16"), NodePath("../markers/Marker2D17")]
 
-[node name="markers" type="Marker2D" parent="." unique_id=1337291843]
+[node name="markers" type="Node2D" parent="." unique_id=488818890]
 
 [node name="Marker2D" type="Marker2D" parent="markers" unique_id=1954102648 groups=["marker", "markers"]]
 position = Vector2(-450, -324)

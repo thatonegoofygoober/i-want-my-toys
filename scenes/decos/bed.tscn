@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://l7gaqlh18lia"]
 
-[ext_resource type="Texture2D" uid="uid://dv643t35qa05c" path="res://OIP__3_-removebg-preview.png" id="1_3bb1o"]
+[ext_resource type="Texture2D" uid="uid://bidjvjipxikot" path="res://Assets/sprites/decos/bed.png" id="1_3bb1o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5kbce"]
 size = Vector2(408, 28)
@@ -12,6 +12,7 @@ position = Vector2(0, -3)
 texture = ExtResource("1_3bb1o")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1317769798]
+position = Vector2(-24, 17)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1559998721]
 position = Vector2(13, -14)

@@ -2,7 +2,9 @@
 extends Node2D
 @export var collected : int = clamp(0,0,max_co)
 @export var max_co : int = 10
-@export var time : float = clamp(50,0,50)
+@export var time : float = 60.0
+
+
 var total_time : int = 30
 @onready var co_text = $Camera2D/Control/CanvasLayer/Label
 @onready var count_text = $Camera2D/Control/CanvasLayer/Label2
@@ -11,6 +13,9 @@ var total_time : int = 30
 var can_be_red : bool = false
 var tran_colors := start_color.lerp(end_color,1.0)
 var color_time :float = 0.0
+var time_cangodown : bool = true
+func _ready() -> void:
+	time = clamp(time,0,time)
 func _process(delta: float) -> void:
 	
 	_collecter()
@@ -19,17 +24,18 @@ func _process(delta: float) -> void:
 
 
 func _countdown(t):
-	time -= t
-	time = clamp(time,0,50)
+	if time_cangodown == true:
+		time -= t
+		time = clamp(time,0,time)
 	
 	count_text.text = str(int(time),"left")
 	if time == 0 and collected <max_co:
-		
+		time_cangodown = false
 		co_text.text = "you lose"
 		await get_tree().create_timer(3).timeout
 		get_tree().reload_current_scene()
 	elif collected ==max_co and time!= 0:
-		
+		time_cangodown = false
 		time = 0
 		time = clamp(0,0,0)
 	
