@@ -1,8 +1,8 @@
 
 extends Node2D
 @export var collected : int = clamp(0,0,max_co)
-@export var max_co : int = 10
-@export var time : float = 60.0
+@onready var max_co : int = get_tree().get_nodes_in_group("toys").size() + 1
+@export var time : float = 80.0
 
 
 var total_time : int = 30
@@ -24,17 +24,13 @@ func _process(delta: float) -> void:
 
 
 func _countdown(t):
-	print("can go down is",time_cangodown)
-	#if time_cangodown:
-	time -= t
-		
-	time = clamp(time,0,time)
+	if time_cangodown == true:
+		time -= t
+		time = clamp(time,0,time)
 	
 	count_text.text = str(int(time),"left")
-	if time  <=0 and collected <max_co:
+	if time <= 0 and collected <max_co:
 		time_cangodown = false
-		time = 0
-		time = clamp(0,0,0)
 		co_text.text = "you lose"
 		await get_tree().create_timer(3).timeout
 		get_tree().reload_current_scene()
@@ -58,8 +54,7 @@ func _collecter():
 		count_text.add_theme_color_override("font_color",Color.GREEN)
 
 		co_text.text  = str("COLLECTED: ",collected," /",max_co," you found all toys!!!")
-		
 		await get_tree().create_timer(3).timeout
-		get_tree().change_scene_to_file("res://levels/level_3.tscn")
+		get_tree().reload_current_scene()
 	if collected + 1 and collected !=max_co:
 		co_text.text  = str("COLLECTED: ",collected," /",max_co)

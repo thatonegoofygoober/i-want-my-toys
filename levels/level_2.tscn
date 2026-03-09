@@ -7355,6 +7355,7 @@ sources/5 = SubResource("TileSetScenesCollectionSource_h351q")
 
 [node name="level2" type="Node2D" unique_id=1218952925]
 script = ExtResource("1_5orea")
+time = 70.0
 
 [node name="bg" type="Node2D" parent="." unique_id=1941500918]
 
@@ -7483,6 +7484,8 @@ position = Vector2(-696, -1473)
 
 [node name="toy_car3" parent="Toys" unique_id=2021409265 instance=ExtResource("18_itbe0")]
 
+[node name="toy_car4" parent="Toys" unique_id=2142603797 instance=ExtResource("18_itbe0")]
+
 [node name="Noliplush" parent="Toys" unique_id=506491750 instance=ExtResource("20_he6wg")]
 
 [node name="Noliplush2" parent="Toys" unique_id=1548827928 instance=ExtResource("20_he6wg")]
@@ -7510,7 +7513,7 @@ shadow_filter_smooth = 20.0
 height = 0.3
 
 [node name="Toy_randomizer" parent="." unique_id=837100193 node_paths=PackedStringArray("toys", "markers") instance=ExtResource("20_h351q")]
-toys = [NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath(""), NodePath("")]
+toys = [null, null, null, null, null, null, null, null, null, null]
 markers = [NodePath("../markers/Marker2D"), NodePath("../markers/Marker2D2"), NodePath("../markers/Marker2D3"), NodePath("../markers/Marker2D4"), NodePath("../markers/Marker2D5"), NodePath("../markers/Marker2D6"), NodePath("../markers/Marker2D7"), NodePath("../markers/Marker2D8"), NodePath("../markers/Marker2D9"), NodePath("../markers/Marker2D10"), NodePath("../markers/Marker2D11"), NodePath("../markers/Marker2D12"), NodePath("../markers/Marker2D13"), NodePath("../markers/Marker2D14"), NodePath("../markers/Marker2D15"), NodePath("../markers/Marker2D16"), NodePath("../markers/Marker2D17")]
 
 [node name="markers" type="Node2D" parent="." unique_id=488818890]
@@ -7519,7 +7522,7 @@ markers = [NodePath("../markers/Marker2D"), NodePath("../markers/Marker2D2"), No
 position = Vector2(-450, -324)
 
 [node name="Marker2D2" type="Marker2D" parent="markers" unique_id=522866964 groups=["marker", "markers"]]
-position = Vector2(-436, 618)
+position = Vector2(-414, 619)
 
 [node name="Marker2D3" type="Marker2D" parent="markers" unique_id=458781749 groups=["marker", "markers"]]
 position = Vector2(1766, 514)
@@ -7558,7 +7561,7 @@ position = Vector2(4206, -1438)
 position = Vector2(6725, -1263)
 
 [node name="Marker2D15" type="Marker2D" parent="markers" unique_id=2134577462 groups=["marker", "markers"]]
-position = Vector2(4134, 605)
+position = Vector2(4152, 603)
 
 [node name="Marker2D16" type="Marker2D" parent="markers" unique_id=934884188 groups=["marker", "markers"]]
 position = Vector2(6745, 673)

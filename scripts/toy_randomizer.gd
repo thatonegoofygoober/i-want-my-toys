@@ -12,13 +12,15 @@ func _ready() -> void:
 	print(get_tree().get_nodes_in_group("marker"))
 	markers2 = get_tree().get_nodes_in_group("marker")
 	randomize()
-	markers.shuffle()
-	toys.shuffle()
+	markers2.shuffle()
+	toys2.shuffle()
 	
 	_place_toys_randomly()
 func _place_toys_randomly():
 	print("markerr2 size is",markers2.size())
+	
 	for i in range(toys2.size()):
+		prints(toys2[i],markers2[i])
 		randomize()
 		
-		toys[i].global_position = markers2[i].global_position
+		toys2[i].global_position = markers2[i].global_position

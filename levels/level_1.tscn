@@ -3790,17 +3790,14 @@ position = Vector2(70, 222)
 rotation = 0.012332626
 
 [node name="toy" parent="Toys" unique_id=1845246820 instance=ExtResource("2_bt44k")]
-z_index = -1
 y_sort_enabled = true
 position = Vector2(61, 204)
 
 [node name="toy2" parent="Toys" unique_id=1182608499 instance=ExtResource("2_bt44k")]
-z_index = -1
 y_sort_enabled = true
 position = Vector2(77, 212)
 
 [node name="toy4" parent="Toys" unique_id=531545895 instance=ExtResource("2_bt44k")]
-z_index = -1
 y_sort_enabled = true
 position = Vector2(56, 216)
 
@@ -3834,32 +3831,32 @@ markers = [NodePath("../markers/Marker2D"), NodePath("../markers/Marker2D2"), No
 
 [node name="markers" type="Node2D" parent="." unique_id=46217266]
 
-[node name="Marker2D" type="Marker2D" parent="markers" unique_id=12332562 groups=["marker", "markers"]]
+[node name="Marker2D" type="Marker2D" parent="markers" unique_id=12332562 groups=["marker"]]
 position = Vector2(-352, 656)
 
-[node name="Marker2D2" type="Marker2D" parent="markers" unique_id=365046415 groups=["marker", "markers"]]
+[node name="Marker2D2" type="Marker2D" parent="markers" unique_id=365046415 groups=["marker"]]
 position = Vector2(2182, 649)
 
-[node name="Marker2D3" type="Marker2D" parent="markers" unique_id=1562931253 groups=["marker", "markers"]]
+[node name="Marker2D3" type="Marker2D" parent="markers" unique_id=1562931253 groups=["marker"]]
 position = Vector2(-430, 155)
 
-[node name="Marker2D4" type="Marker2D" parent="markers" unique_id=424637991 groups=["marker", "markers"]]
+[node name="Marker2D4" type="Marker2D" parent="markers" unique_id=424637991 groups=["marker"]]
 position = Vector2(-526, -581)
 
-[node name="Marker2D5" type="Marker2D" parent="markers" unique_id=923042667 groups=["marker", "markers"]]
+[node name="Marker2D5" type="Marker2D" parent="markers" unique_id=923042667 groups=["marker"]]
 position = Vector2(2176, -714)
 
-[node name="Marker2D6" type="Marker2D" parent="markers" unique_id=102330065 groups=["marker", "markers"]]
+[node name="Marker2D6" type="Marker2D" parent="markers" unique_id=102330065 groups=["marker"]]
 position = Vector2(-1671, -414)
 
-[node name="Marker2D7" type="Marker2D" parent="markers" unique_id=1352401567 groups=["marker", "markers"]]
+[node name="Marker2D7" type="Marker2D" parent="markers" unique_id=1352401567 groups=["marker"]]
 position = Vector2(-1654, 647)
 
-[node name="Marker2D8" type="Marker2D" parent="markers" unique_id=1909250247 groups=["marker", "markers"]]
+[node name="Marker2D8" type="Marker2D" parent="markers" unique_id=1909250247 groups=["marker"]]
 position = Vector2(-2840, 455)
 
-[node name="Marker2D9" type="Marker2D" parent="markers" unique_id=391010921 groups=["marker", "markers"]]
+[node name="Marker2D9" type="Marker2D" parent="markers" unique_id=391010921 groups=["marker"]]
 position = Vector2(-3037, -138)
 
-[node name="Marker2D10" type="Marker2D" parent="markers" unique_id=1733277728 groups=["marker", "markers"]]
+[node name="Marker2D10" type="Marker2D" parent="markers" unique_id=1733277728 groups=["marker"]]
 position = Vector2(-3058, -812)

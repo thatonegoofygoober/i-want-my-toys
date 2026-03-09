@@ -13,6 +13,10 @@ size = Vector2(356, 36)
 position = Vector2(7, -128)
 shape = SubResource("RectangleShape2D_udf5s")
 
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" unique_id=1864921300]
+position = Vector2(7, -231)
+shape = SubResource("RectangleShape2D_udf5s")
+
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=528156585]
 position = Vector2(7, -7)
 shape = SubResource("RectangleShape2D_udf5s")
