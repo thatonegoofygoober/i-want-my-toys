@@ -7368,10 +7368,11 @@ time = 90.0
 
 [node name="ColorRect" type="ColorRect" parent="bg/room1" unique_id=1241741479]
 z_index = -5
-offset_left = -20526.0
-offset_top = -19160.0
-offset_right = 10917.0
-offset_bottom = 3099.0
+offset_left = -18524.0
+offset_top = -17575.0
+offset_right = 12919.0
+offset_bottom = 4684.0
+pivot_offset = Vector2(19910, 13376)
 mouse_filter = 2
 
 [node name="ColorRect2" type="ColorRect" parent="bg/room1" unique_id=2056235594]
@@ -7442,7 +7443,7 @@ tile_set = SubResource("TileSet_5ot28")
 
 [node name="Camera2D" parent="." unique_id=691893083 instance=ExtResource("17_b1cs7")]
 position = Vector2(577, 383)
-zoom = Vector2(0.895, 0.895)
+zoom = Vector2(0.74, 0.74)
 limit_left = 0
 limit_top = 0
 limit_right = 0
@@ -7617,3 +7618,5 @@ position = Vector2(3648, -4048)
 
 [node name="Marker2D32" type="Marker2D" parent="markers" unique_id=742141678 groups=["marker", "markers"]]
 position = Vector2(-2152, -3952)
+
+[node name="Node" type="Node" parent="." unique_id=36139871]
