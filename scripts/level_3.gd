@@ -1,7 +1,7 @@
 
 extends Node2D
 @export var collected : int = clamp(0,0,max_co)
-@onready var max_co : int = get_tree().get_nodes_in_group("toys").size() + 1
+@onready var max_co : int = get_tree().get_nodes_in_group("toys").size() 
 @export var time : float = 80.0
 
 
@@ -24,6 +24,7 @@ func _process(delta: float) -> void:
 
 
 func _countdown(t):
+	print("size is",max_co)
 	if time_cangodown == true:
 		time -= t
 		time = clamp(time,0,time)
@@ -58,3 +59,7 @@ func _collecter():
 		get_tree().reload_current_scene()
 	if collected + 1 and collected !=max_co:
 		co_text.text  = str("COLLECTED: ",collected," /",max_co)
+
+
+func _on_node_ready() -> void:
+	pass # Replace with function body.
