@@ -18,7 +18,7 @@ func _ready() -> void:
 	_place_toys_randomly()
 func _place_toys_randomly():
 	print("markerr2 size is",markers2.size())
-	
+	prints("markersize",markers2.size(),"toyssize",toys2.size(),toys2,markers2)
 	for i in range(toys2.size()):
 		prints(toys2[i],markers2[i])
 		randomize()

@@ -7,11 +7,15 @@ var total_time : int = 30
 @onready var count_text = $Camera2D/Control/CanvasLayer/Label2
 @export var start_color :Color= Color.BLACK
 @export var end_color :Color= Color.RED
+var secs : int = int(time) % 60
+var mins : int = int(time) / 60
+
 var can_be_red : bool = false
 var tran_colors := start_color.lerp(end_color,1.0)
 var color_time :float = 0.0
 func _process(delta: float) -> void:
-	
+	secs = int(time) % 60
+	mins = int(time) / 60
 	_collecter()
 	_countdown(delta) 
 
@@ -21,7 +25,7 @@ func _countdown(t):
 	time -= t
 	time = clamp(time,0,30)
 	
-	count_text.text = str(int(time),"left")
+	count_text.text = str(mins) + ":" +str(secs).pad_zeros(2) + " left"
 	if time == 0 and collected <max_co:
 		
 		co_text.text = "you lose"

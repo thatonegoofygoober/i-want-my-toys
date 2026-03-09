@@ -11,19 +11,19 @@ var of : Vector2
 
 func _ready() -> void:
 	print(button)
-	print(button.button_up.connect(_on_button_up))
-	print(button.button_down.connect(_on_button_down))
+	#print(button.button_up.connect(_on_button_up))
+	print(button.pressed.connect(_on_button_down))
 	add_to_group("toys")
 	
-	button.button_up.connect(_on_button_up)
-	button.button_down.connect(_on_button_down)
-func _on_button_up():
-	print("buttonnotpressed")
-	grabbed = false
+	#button.pressed.connect(_on_button_up)
+	button.pressed.connect(_on_button_down)
+#func _on_button_up():
+	#print("buttonnotpressed")
+	#grabbed = false
 
 func _on_button_down(): 
 	print("button pressingh")
-	grabbed = true
+	grabbed = !grabbed
 	of = get_global_mouse_position() - global_position
 	size_change = lerp(size_change,Vector2(1.5,1.5),0.5) 
 

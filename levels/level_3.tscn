@@ -7477,29 +7477,30 @@ text = "."
 [node name="Toys" type="Node2D" parent="." unique_id=822556461]
 position = Vector2(-696, -1473)
 
-[node name="Noliplush" parent="Toys" unique_id=506491750 instance=ExtResource("20_wf2kr")]
+[node name="ball" parent="Toys" unique_id=352205385 instance=ExtResource("23_6anhs")]
 
-[node name="Noliplush2" parent="Toys" unique_id=786752949 instance=ExtResource("20_wf2kr")]
+[node name="ball2" parent="Toys" unique_id=1861231055 instance=ExtResource("23_6anhs")]
 
-[node name="Noliplush3" parent="Toys" unique_id=167874920 instance=ExtResource("20_wf2kr")]
-
-[node name="toy_car" parent="Toys" unique_id=1571914932 instance=ExtResource("19_bm5fu")]
-
-[node name="toy_car2" parent="Toys" unique_id=684902867 instance=ExtResource("19_bm5fu")]
-
-[node name="toy_car3" parent="Toys" unique_id=1450519398 instance=ExtResource("19_bm5fu")]
+[node name="ball3" parent="Toys" unique_id=878654740 instance=ExtResource("23_6anhs")]
 
 [node name="teddy_bear" parent="Toys" unique_id=1845246820 instance=ExtResource("18_fxw2g")]
 
-[node name="teddy_bear2" parent="Toys" unique_id=530906018 instance=ExtResource("18_fxw2g")]
+[node name="teddy_bear2" parent="Toys" unique_id=386687405 instance=ExtResource("18_fxw2g")]
 
-[node name="teddy_bear3" parent="Toys" unique_id=1549947373 instance=ExtResource("18_fxw2g")]
+[node name="teddy_bear3" parent="Toys" unique_id=1315434614 instance=ExtResource("18_fxw2g")]
 
-[node name="ball" parent="Toys" unique_id=352205385 instance=ExtResource("23_6anhs")]
+[node name="toy_car" parent="Toys" unique_id=1571914932 instance=ExtResource("19_bm5fu")]
 
-[node name="ball2" parent="Toys" unique_id=493808078 instance=ExtResource("23_6anhs")]
+[node name="toy_car2" parent="Toys" unique_id=1136362452 instance=ExtResource("19_bm5fu")]
 
-[node name="ball3" parent="Toys" unique_id=1227107447 instance=ExtResource("23_6anhs")]
+[node name="toy_car3" parent="Toys" unique_id=152765885 instance=ExtResource("19_bm5fu")]
+
+[node name="Noliplush" parent="Toys" unique_id=506491750 instance=ExtResource("20_wf2kr")]
+
+[node name="Noliplush2" parent="Toys" unique_id=1870504868 instance=ExtResource("20_wf2kr")]
+size_change = Vector2(5.14, 5.47)
+
+[node name="Noliplush3" parent="Toys" unique_id=1207666878 instance=ExtResource("20_wf2kr")]
 
 [node name="deathzone" parent="." unique_id=1499393473 node_paths=PackedStringArray("fall_back_pos") instance=ExtResource("21_ro52v")]
 position = Vector2(108, 1696)
@@ -7558,7 +7559,7 @@ position = Vector2(-3083, -313)
 position = Vector2(-1848, 670)
 
 [node name="Marker2D11" type="Marker2D" parent="markers" unique_id=1231337133 groups=["marker", "markers"]]
-position = Vector2(-3051, 592)
+position = Vector2(-3016, 592)
 
 [node name="Marker2D12" type="Marker2D" parent="markers" unique_id=1358622914 groups=["marker", "markers"]]
 position = Vector2(3974, -456)
@@ -7576,7 +7577,7 @@ position = Vector2(4134, 605)
 position = Vector2(6745, 673)
 
 [node name="Marker2D17" type="Marker2D" parent="markers" unique_id=1850964702 groups=["marker", "markers"]]
-position = Vector2(5515, 522)
+position = Vector2(5504, 520)
 
 [node name="Marker2D18" type="Marker2D" parent="markers" unique_id=132938752 groups=["marker", "markers"]]
 position = Vector2(-1960, -2368)
@@ -7588,13 +7589,13 @@ position = Vector2(-1728, -2608)
 position = Vector2(-1232, -2344)
 
 [node name="Marker2D21" type="Marker2D" parent="markers" unique_id=710870137 groups=["marker", "markers"]]
-position = Vector2(336, -2664)
+position = Vector2(304, -2664)
 
 [node name="Marker2D22" type="Marker2D" parent="markers" unique_id=1146670770 groups=["marker", "markers"]]
 position = Vector2(520, -2392)
 
 [node name="Marker2D23" type="Marker2D" parent="markers" unique_id=744348517 groups=["marker", "markers"]]
-position = Vector2(784, -2560)
+position = Vector2(800, -2560)
 
 [node name="Marker2D24" type="Marker2D" parent="markers" unique_id=1365238955 groups=["marker", "markers"]]
 position = Vector2(2416, -2360)
@@ -7613,12 +7614,6 @@ position = Vector2(3512, -3096)
 
 [node name="Marker2D29" type="Marker2D" parent="markers" unique_id=270272403 groups=["marker", "markers"]]
 position = Vector2(3648, -4048)
-
-[node name="Marker2D30" type="Marker2D" parent="markers" unique_id=1438164001 groups=["marker", "markers"]]
-position = Vector2(3658, -5080)
-
-[node name="Marker2D31" type="Marker2D" parent="markers" unique_id=605476926 groups=["marker", "markers"]]
-position = Vector2(-1952, -5704)
 
 [node name="Marker2D32" type="Marker2D" parent="markers" unique_id=742141678 groups=["marker", "markers"]]
 position = Vector2(-2152, -3952)

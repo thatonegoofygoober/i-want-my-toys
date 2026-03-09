@@ -1,13 +1,14 @@
 
 extends Node2D
 @export var collected : int = clamp(0,0,max_co)
-@onready var max_co : int = get_tree().get_nodes_in_group("toys").size() + 1
+@onready var max_co : int = get_tree().get_nodes_in_group("toys").size()
 @export var time : float = 80.0
-
+var secs : int = int(time) % 60
+var mins : int = int(time) / 60
 
 var total_time : int = 30
-@onready var co_text = $Camera2D/Control/CanvasLayer/Label
-@onready var count_text = $Camera2D/Control/CanvasLayer/Label2
+@onready var co_text : Label= $Camera2D/Control/CanvasLayer/Label
+@onready var count_text :Label= $Camera2D/Control/CanvasLayer/Label2
 @export var start_color :Color= Color.BLACK
 @export var end_color :Color= Color.RED
 var can_be_red : bool = false
@@ -17,18 +18,19 @@ var time_cangodown : bool = true
 func _ready() -> void:
 	time = clamp(time,0,time)
 func _process(delta: float) -> void:
-	
+	secs = int(time) % 60
+	mins = int(time) / 60
 	_collecter()
 	_countdown(delta)
 
 
 
-func _countdown(t):
+func _countdown(t:float) -> void:
 	if time_cangodown == true:
 		time -= t
 		time = clamp(time,0,time)
 	
-	count_text.text = str(int(time),"left")
+	count_text.text = str(mins) + ":" +str(secs).pad_zeros(2) + " left"
 	if time <= 0 and collected <max_co:
 		time_cangodown = false
 		co_text.text = "you lose"
@@ -46,7 +48,7 @@ func _countdown(t):
 		count_text.add_theme_color_override("font_color",tran_colors)
 
 
-func _collecter():
+func _collecter()-> void:
 	if collected == max_co:
 		can_be_red = true
 		print("idk")

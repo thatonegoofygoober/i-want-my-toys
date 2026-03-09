@@ -3,6 +3,8 @@ extends Node2D
 @export var collected : int = clamp(0,0,max_co)
 @export var max_co : int = 10
 @export var time : float = 60.0
+var secs : int = int(time) % 60
+var mins : int = int(time) / 60
 
 
 var total_time : int = 30
@@ -17,7 +19,8 @@ var time_cangodown : bool = true
 func _ready() -> void:
 	time = clamp(time,0,time)
 func _process(delta: float) -> void:
-	
+	secs = int(time) % 60
+	mins = int(time) / 60
 	_collecter()
 	_countdown(delta)
 
@@ -30,7 +33,7 @@ func _countdown(t):
 		
 	time = clamp(time,0,time)
 	
-	count_text.text = str(int(time),"left")
+	count_text.text = str(mins) + ":" +str(secs).pad_zeros(2) + " left"
 	if time  <=0 and collected <max_co:
 		time_cangodown = false
 		time = 0
