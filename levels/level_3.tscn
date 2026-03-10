@@ -7620,13 +7620,13 @@ position = Vector2(3648, -4048)
 [node name="Marker2D32" type="Marker2D" parent="markers" unique_id=742141678 groups=["marker", "markers"]]
 position = Vector2(-2152, -3952)
 
+[node name="Marker2D30" type="Marker2D" parent="." unique_id=581851643]
+position = Vector2(4134, 24)
+
 [node name="interactble_toy2" parent="." unique_id=1827700374 node_paths=PackedStringArray("spawnpoint", "toy_spawn") instance=ExtResource("27_e28pm")]
 position = Vector2(458, 3955)
 spawnpoint = NodePath("Marker2D")
-toy_spawn = NodePath("../toys spawn")
+toy_spawn = NodePath("../Marker2D30")
 
 [node name="Marker2D" type="Marker2D" parent="interactble_toy2" unique_id=789237409]
-position = Vector2(-196, -3358)
-
-[node name="Marker2D2" type="Marker2D" parent="interactble_toy2" unique_id=1477391622]
-position = Vector2(-199, -3630)
+position = Vector2(4022, -3387)

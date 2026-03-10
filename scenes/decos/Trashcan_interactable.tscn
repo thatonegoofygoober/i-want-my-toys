@@ -2,25 +2,31 @@
 
 [ext_resource type="Script" uid="uid://boupy502jvh5y" path="res://scripts/interactbel.gd" id="1_60py1"]
 [ext_resource type="Texture2D" uid="uid://y3i2yxp8lkft" path="res://Assets/sprites/decos/Trashcan.png" id="2_hdtdp"]
+[ext_resource type="Texture2D" uid="uid://coyp0vd7a00me" path="res://Assets/sprites/others/Question_partical.png" id="3_dti2t"]
 
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_hdtdp"]
-lifetime_randomness = 0.3
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_nxexy"]
+particle_flag_rotate_y = true
 particle_flag_disable_z = true
-emission_shape_offset = Vector3(1.64, 2.75, 0)
-angle_min = 1.0728835e-05
-angle_max = 205.70001
-inherit_velocity_ratio = 0.27
-initial_velocity_min = 289.68
-initial_velocity_max = 603.17
-orbit_velocity_min = -1.397
-orbit_velocity_max = 9.49949e-08
-gravity = Vector3(10.73, 98, 0)
-linear_accel_min = -53.170002
-linear_accel_max = -2.2351742e-06
+particle_flag_damping_as_friction = true
+emission_shape_offset = Vector3(-12.2, 10.72, 0)
+emission_shape_scale = Vector3(2.63, 2.07, 1)
+angle_min = -720.0
+angle_max = -691.4
+inherit_velocity_ratio = 0.15
+spread = 180.0
+flatness = 1.0
+initial_velocity_max = 35.71
+orbit_velocity_min = 9.49949e-08
+orbit_velocity_max = 0.1580001
+radial_velocity_min = -2.2351742e-05
+radial_velocity_max = 158.72998
+gravity = Vector3(0, 98, 0)
 
-[node name="interactble_toy" type="Node2D" unique_id=1827700374 node_paths=PackedStringArray("button")]
+[node name="interactble_toy" type="Node2D" unique_id=1827700374 node_paths=PackedStringArray("button", "screen_checker", "partical")]
 script = ExtResource("1_60py1")
 button = NodePath("Button")
+screen_checker = NodePath("VisibleOnScreenNotifier2D")
+partical = NodePath("GPUParticles2D")
 metadata/_custom_type_script = "uid://boupy502jvh5y"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1986894153]
@@ -29,6 +35,7 @@ scale = Vector2(1.4453125, 1.5)
 texture = ExtResource("2_hdtdp")
 
 [node name="Button" type="Button" parent="." unique_id=636917643]
+modulate = Color(1, 1, 1, 0)
 offset_left = -64.0
 offset_top = -85.0
 offset_right = 75.0
@@ -38,6 +45,13 @@ metadata/_edit_use_anchors_ = true
 [node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=1514068741]
 rotation = -3.1415927
 scale = Vector2(2.83, 2.83)
-texture = ExtResource("2_hdtdp")
+emitting = false
+texture = ExtResource("3_dti2t")
 lifetime = 0.5
-process_material = SubResource("ParticleProcessMaterial_hdtdp")
+explosiveness = 0.49
+randomness = 1.0
+fixed_fps = 26
+process_material = SubResource("ParticleProcessMaterial_nxexy")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=504288396]
+rect = Rect2(-64, -93, 145, 183)

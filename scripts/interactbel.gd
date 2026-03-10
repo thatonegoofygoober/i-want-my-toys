@@ -3,6 +3,8 @@ class_name interactble_toy
 @export var spawnpoint : Marker2D
 @export var button : Button
 @export var toy_spawn : Marker2D
+@export var screen_checker : VisibleOnScreenNotifier2D
+@export var partical : GPUParticles2D
 var chance :int
 @onready var toys : Array
 var pressed_time :int= 0
@@ -27,14 +29,18 @@ func take_toy_and_hide_it_for_interactble():
 			print("it works good")
 	
 	
-
+func _screen_checking_entered():
+	partical.emitting = true
+func _screen_checking_exited():
+	partical.emitting = false
 func _ready() -> void:
 	randomize()
 	
 	chance = randi_range(0,1)
 	if chance == 1:
 		global_position = spawnpoint.global_position
-
+	screen_checker.screen_entered.connect(_screen_checking_entered)
+	screen_checker.screen_exited.connect(_screen_checking_exited)
 	button.pressed.connect(take_toy_and_hide_it_for_interactble)
 	await get_tree().process_frame
 	
