@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://bwtk7sw6cb4a0"]
+
+[ext_resource type="Script" uid="uid://bcvs5f405ds04" path="res://scenes/button.gd" id="1_5mbse"]
+[ext_resource type="Script" uid="uid://cdei6y8fh56rm" path="res://scenes/texture_rect.gd" id="2_natt5"]
+
+[node name="mainmenu" type="Control" unique_id=1908934604]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1834412571]
+layout_mode = 0
+offset_left = -1536.0
+offset_top = -744.0
+offset_right = 3920.0
+offset_bottom = 2760.0
+color = Color(0.7690366, 0.43262887, 0.28715318, 1)
+
+[node name="Button" type="Button" parent="." unique_id=940102090]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 360.0
+offset_right = 352.0
+offset_bottom = 496.0
+theme_override_font_sizes/font_size = 40
+text = "play?"
+script = ExtResource("1_5mbse")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=231969121]
+layout_mode = 0
+offset_right = 680.0
+offset_bottom = 328.0
+theme_override_font_sizes/normal_font_size = 100
+theme_override_font_sizes/bold_font_size = 100
+bbcode_enabled = true
+text = "I want My [b][rainbow]TOYS[/rainbow][/b] "
+scroll_active = false
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=582625538]
+layout_mode = 0
+offset_left = 520.0
+offset_top = 200.0
+offset_right = 992.0
+offset_bottom = 560.0
+script = ExtResource("2_natt5")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

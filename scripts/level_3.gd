@@ -44,6 +44,7 @@ func _countdown(t:float) -> void:
 		await get_tree().create_timer(3).timeout
 		get_tree().reload_current_scene()
 	elif collected ==max_co and time!= 0:
+		get_tree().change_scene_to_file("res://levels/level_4.tscn")
 		time_cangodown = false
 		time = 0
 		time = clamp(0,0,0)

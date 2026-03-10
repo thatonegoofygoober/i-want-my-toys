@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://ctoo41m4miwcm"]
 
 [ext_resource type="Script" uid="uid://dwpidttwe0dl3" path="res://scripts/box.gd" id="1_3inec"]
-[ext_resource type="Texture2D" uid="uid://chqwrgoaxof5p" path="res://Assets/sprites/decos/box.png" id="2_ks2v0"]
+[ext_resource type="Texture2D" uid="uid://dyofqncqhbfe6" path="res://Assets/sprites/decos/Toybox_.png" id="2_ks2v0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c2ln5"]
 size = Vector2(434, 386)
@@ -11,7 +11,7 @@ data = PackedByteArray("AAAAAAAAAAD//x8fGBgJCYCAEYIBAQiRgIEzMjkoOSiokLGw+fnQ0IiI
 format = 2
 stereo = true
 
-[node name="box" type="Area2D" unique_id=1541108313]
+[node name="toy_box" type="Area2D" unique_id=1541108313]
 z_index = -5
 script = ExtResource("1_3inec")
 

@@ -11,15 +11,16 @@ var of : Vector2
 
 func _ready() -> void:
 	print(button)
-	#print(button.button_up.connect(_on_button_up))
+	print(button.button_up.connect(_on_button_up))
 	print(button.pressed.connect(_on_button_down))
 	add_to_group("toys")
 	
-	#button.pressed.connect(_on_button_up)
+	button.button_up.connect(_on_button_up)
+	button.button_down.connect(_on_button_down)
 	button.pressed.connect(_on_button_down)
-#func _on_button_up():
-	#print("buttonnotpressed")
-	#grabbed = false
+func _on_button_up():
+	print("buttonnotpressed")
+	grabbed = false
 
 func _on_button_down(): 
 	print("button pressingh")

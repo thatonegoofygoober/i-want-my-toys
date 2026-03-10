@@ -47,7 +47,7 @@ func _countdown(t:float) -> void:
 		time_cangodown = false
 		time = 0
 		time = clamp(0,0,0)
-	
+		get_tree().change_scene_to_file("res://scenes/endcredits.tscn")
 	elif time < total_time/2 and can_be_red == false:
 		
 		

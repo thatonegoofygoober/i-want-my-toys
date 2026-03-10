@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="I want my toys"
-run/main_scene="uid://ou24x3u2kdvu"
+run/main_scene="uid://bwtk7sw6cb4a0"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 run/max_fps=60
 config/icon="res://icon.svg"

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://ckg8je4th06i6"]
+
+[node name="Control" type="Control" unique_id=1961740360]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2125559829]
+layout_mode = 0
+offset_right = 1184.0
+offset_bottom = 744.0
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=762501640]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 224.0
+offset_right = 1032.0
+offset_bottom = 632.0
+theme_override_font_sizes/normal_font_size = 100
+theme_override_font_sizes/bold_font_size = 100
+bbcode_enabled = true
+text = "[wave] [rainbow] [b] you   [/b] beat the game"

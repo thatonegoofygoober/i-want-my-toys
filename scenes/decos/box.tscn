@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://comtr4e7e01do"]
+
+[ext_resource type="Texture2D" uid="uid://chqwrgoaxof5p" path="res://Assets/sprites/decos/Box2.png" id="1_t2j2v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t2j2v"]
+size = Vector2(440, 56)
+
+[node name="box" type="Node2D" unique_id=443766302]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1763847616]
+texture = ExtResource("1_t2j2v")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1317769798]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1096542873]
+position = Vector2(8, -200)
+shape = SubResource("RectangleShape2D_t2j2v")
