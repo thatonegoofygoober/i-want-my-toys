@@ -1,20 +1,41 @@
-extends Node
+extends Node2D
 class_name interactble_toy
 @export var spawnpoint : Marker2D
 @export var button : Button
-var toys : Array = get_tree().get_nodes_in_group("toys")
-var pressed :int= 0
-
+@export var toy_spawn : Marker2D
+var chance :int
+@onready var toys : Array
+var pressed_time :int= 0
+var pressed : bool = false
+@onready var rand_toy : Toy 
 func take_toy_and_hide_it_for_interactble():
-	if pressed == 0:
-		var rand_toy : Toy = toys.pick_random()
-		pressed += 1
 		
-		rand_toy.global_position = self.global_position + Vector2(0,100)
+		toys= get_tree().get_nodes_in_group("toys")
+		rand_toy = toys.pick_random()
+		print("the chosen toys position is",rand_toy.global_position)
+		print("size of this kaka toys is ....",toys.size())
+		pressed = true
+		print("works")
+		
+		print("thechosen toy ia",rand_toy)
+		print("the chosen toys position is",rand_toy.global_position)
+		rand_toy.global_position = toy_spawn.global_position
+		queue_free()
+		print("the chosen toys position is",rand_toy.global_position)
+		print("the toys spawnpos is ",toy_spawn.global_position)
+		if rand_toy.global_position == toy_spawn.global_position:
+			print("it works good")
 	
 	
 
 func _ready() -> void:
+	randomize()
+	
+	chance = randi_range(0,1)
+	if chance == 1:
+		global_position = spawnpoint.global_position
+
 	button.pressed.connect(take_toy_and_hide_it_for_interactble)
-	take_toy_and_hide_it_for_interactble()
+	await get_tree().process_frame
+	
 	

@@ -26,6 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://ctoo41m4miwcm" path="res://scenes/box.tscn" id="22_7yfsq"]
 [ext_resource type="PackedScene" uid="uid://7e2tbmas3q7d" path="res://toys/ball.tscn" id="23_6anhs"]
 [ext_resource type="PackedScene" uid="uid://b3qpdc3vv0e8n" path="res://scenes/toy_randomizer.tscn" id="23_wcms2"]
+[ext_resource type="PackedScene" uid="uid://bvlwoi2klksf6" path="res://scenes/decos/Trashcan_interactable.tscn" id="27_e28pm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lrvbd"]
 texture = ExtResource("2_8swdu")
@@ -7508,7 +7509,7 @@ position = Vector2(108, 1696)
 fall_back_pos = NodePath("../toys spawn")
 
 [node name="toys spawn" type="Marker2D" parent="." unique_id=169742130]
-position = Vector2(-221, 469)
+position = Vector2(-235, 473)
 
 [node name="box" parent="." unique_id=1541108313 node_paths=PackedStringArray("parent") instance=ExtResource("22_7yfsq")]
 position = Vector2(599, 460)
@@ -7533,7 +7534,7 @@ markers = [NodePath("../markers/Marker2D"), NodePath("../markers/Marker2D2"), No
 position = Vector2(-450, -324)
 
 [node name="Marker2D2" type="Marker2D" parent="markers" unique_id=522866964 groups=["marker", "markers"]]
-position = Vector2(-436, 618)
+position = Vector2(-408, 622)
 
 [node name="Marker2D3" type="Marker2D" parent="markers" unique_id=458781749 groups=["marker", "markers"]]
 position = Vector2(1766, 514)
@@ -7619,4 +7620,13 @@ position = Vector2(3648, -4048)
 [node name="Marker2D32" type="Marker2D" parent="markers" unique_id=742141678 groups=["marker", "markers"]]
 position = Vector2(-2152, -3952)
 
-[node name="Node" type="Node" parent="." unique_id=36139871]
+[node name="interactble_toy2" parent="." unique_id=1827700374 node_paths=PackedStringArray("spawnpoint", "toy_spawn") instance=ExtResource("27_e28pm")]
+position = Vector2(458, 3955)
+spawnpoint = NodePath("Marker2D")
+toy_spawn = NodePath("../toys spawn")
+
+[node name="Marker2D" type="Marker2D" parent="interactble_toy2" unique_id=789237409]
+position = Vector2(-196, -3358)
+
+[node name="Marker2D2" type="Marker2D" parent="interactble_toy2" unique_id=1477391622]
+position = Vector2(-199, -3630)

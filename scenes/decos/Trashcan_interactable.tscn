@@ -18,7 +18,7 @@ gravity = Vector3(10.73, 98, 0)
 linear_accel_min = -53.170002
 linear_accel_max = -2.2351742e-06
 
-[node name="interactble_toy" type="Node" unique_id=1006489556 node_paths=PackedStringArray("button")]
+[node name="interactble_toy" type="Node2D" unique_id=1827700374 node_paths=PackedStringArray("button")]
 script = ExtResource("1_60py1")
 button = NodePath("Button")
 metadata/_custom_type_script = "uid://boupy502jvh5y"
@@ -33,9 +33,11 @@ offset_left = -64.0
 offset_top = -85.0
 offset_right = 75.0
 offset_bottom = 84.0
+metadata/_edit_use_anchors_ = true
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=1514068741]
-scale = Vector2(-2.83, -2.83)
+rotation = -3.1415927
+scale = Vector2(2.83, 2.83)
 texture = ExtResource("2_hdtdp")
 lifetime = 0.5
 process_material = SubResource("ParticleProcessMaterial_hdtdp")
