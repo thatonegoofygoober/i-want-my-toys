@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://ch7a41dguh7bc"]
+
+[ext_resource type="Script" uid="uid://dg314bgc4wcv1" path="res://scenes/level_transtion.gd" id="1_vraky"]
+[ext_resource type="FontFile" uid="uid://djua56p6hjlqa" path="res://Kids Drawing.ttf" id="2_cgwr2"]
+
+[sub_resource type="Animation" id="Animation_3p1qj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("RichTextLabel:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_vraky"]
+resource_name = "fade in"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.033333335, 1.9666667),
+"transitions": PackedFloat32Array(1, 0.933033),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_3kjb5"]
+resource_name = "label fade in"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("RichTextLabel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.9666667, 2.4666667),
+"transitions": PackedFloat32Array(1, 1.4142137, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cgwr2"]
+_data = {
+&"RESET": SubResource("Animation_3p1qj"),
+&"fade in": SubResource("Animation_vraky"),
+&"label fade in": SubResource("Animation_3kjb5")
+}
+
+[node name="level_transtion" type="Node2D" unique_id=1873035785]
+script = ExtResource("1_vraky")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1707902908]
+offset_left = -21205.0
+offset_top = -11502.0
+offset_right = 25145.0
+offset_bottom = 21538.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=880543143]
+libraries/ = SubResource("AnimationLibrary_cgwr2")
+autoplay = &"label fade in"
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="." unique_id=1517861503]
+libraries/ = SubResource("AnimationLibrary_cgwr2")
+autoplay = &"label fade in"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1616485647]
+offset_left = -11113.0
+offset_top = -3576.0
+offset_right = 12940.0
+offset_bottom = 10717.0
+theme_override_fonts/normal_font = ExtResource("2_cgwr2")
+theme_override_font_sizes/normal_font_size = 100
+bbcode_enabled = true
+
+[node name="Timer" type="Timer" parent="." unique_id=530812074]
+wait_time = 2.5
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

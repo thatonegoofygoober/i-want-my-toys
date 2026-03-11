@@ -20,9 +20,11 @@
 [ext_resource type="PackedScene" uid="uid://c3hdn0ngcgxxa" path="res://scenes/decos/chair.tscn" id="16_ndgrd"]
 [ext_resource type="PackedScene" uid="uid://ctoo41m4miwcm" path="res://scenes/box.tscn" id="17_4yoxl"]
 [ext_resource type="PackedScene" uid="uid://cun05sy1wgm5i" path="res://toys/toy_car.tscn" id="18_itbe0"]
+[ext_resource type="FontFile" uid="uid://djua56p6hjlqa" path="res://Kids Drawing.ttf" id="18_xrja0"]
 [ext_resource type="PackedScene" uid="uid://ch4bx8mymopt2" path="res://toys/toy.tscn" id="19_xrja0"]
 [ext_resource type="PackedScene" uid="uid://b3qpdc3vv0e8n" path="res://scenes/toy_randomizer.tscn" id="20_h351q"]
 [ext_resource type="PackedScene" uid="uid://j18i764g5cx0" path="res://toys/Noliplush.tscn" id="20_he6wg"]
+[ext_resource type="PackedScene" uid="uid://ch7a41dguh7bc" path="res://scenes/level_transtion.tscn" id="25_he6wg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lrvbd"]
 texture = ExtResource("2_k2aru")
@@ -7458,6 +7460,7 @@ offset_top = 17.0
 offset_right = 56.0
 offset_bottom = 154.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18_xrja0")
 theme_override_font_sizes/font_size = 60
 
 [node name="Label2" type="Label" parent="Camera2D/Control/CanvasLayer" unique_id=153312889]
@@ -7466,6 +7469,7 @@ offset_top = 146.0
 offset_right = 56.0
 offset_bottom = 283.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("18_xrja0")
 theme_override_font_sizes/font_size = 100
 text = "."
 
@@ -7568,3 +7572,6 @@ position = Vector2(6745, 673)
 
 [node name="Marker2D17" type="Marker2D" parent="markers" unique_id=1850964702 groups=["marker", "markers"]]
 position = Vector2(5515, 522)
+
+[node name="level_transtion" parent="." unique_id=1873035785 instance=ExtResource("25_he6wg")]
+text = "Level 2"

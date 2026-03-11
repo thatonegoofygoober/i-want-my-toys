@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://comtr4e7e01do" path="res://scenes/decos/box.tscn" id="19_0bers"]
 [ext_resource type="PackedScene" uid="uid://cg1q1hgi61dfl" path="res://scenes/camera_2d.tscn" id="19_4h4lk"]
 [ext_resource type="PackedScene" uid="uid://7e2tbmas3q7d" path="res://toys/ball.tscn" id="20_yp04h"]
+[ext_resource type="FontFile" uid="uid://djua56p6hjlqa" path="res://Kids Drawing.ttf" id="21_kiqbd"]
 [ext_resource type="PackedScene" uid="uid://ch4bx8mymopt2" path="res://toys/toy.tscn" id="21_vc6ux"]
 [ext_resource type="PackedScene" uid="uid://cun05sy1wgm5i" path="res://toys/toy_car.tscn" id="22_1gtbd"]
 [ext_resource type="PackedScene" uid="uid://j18i764g5cx0" path="res://toys/Noliplush.tscn" id="23_0quxv"]
@@ -29,6 +30,7 @@
 [ext_resource type="PackedScene" uid="uid://ctoo41m4miwcm" path="res://scenes/box.tscn" id="25_m0qt0"]
 [ext_resource type="PackedScene" uid="uid://b3qpdc3vv0e8n" path="res://scenes/toy_randomizer.tscn" id="26_wred1"]
 [ext_resource type="PackedScene" uid="uid://bvlwoi2klksf6" path="res://scenes/decos/Trashcan_interactable.tscn" id="27_65scv"]
+[ext_resource type="PackedScene" uid="uid://ch7a41dguh7bc" path="res://scenes/level_transtion.tscn" id="31_0l8tu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lrvbd"]
 texture = ExtResource("2_0bers")
@@ -7469,6 +7471,7 @@ offset_top = 17.0
 offset_right = 56.0
 offset_bottom = 154.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("21_kiqbd")
 theme_override_font_sizes/font_size = 60
 
 [node name="Label2" type="Label" parent="Camera2D/Control/CanvasLayer" unique_id=153312889]
@@ -7477,6 +7480,7 @@ offset_top = 146.0
 offset_right = 56.0
 offset_bottom = 283.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("21_kiqbd")
 theme_override_font_sizes/font_size = 100
 text = "."
 
@@ -7678,3 +7682,6 @@ position = Vector2(-196, -3358)
 
 [node name="Marker2D2" type="Marker2D" parent="interactble_toy2" unique_id=1477391622]
 position = Vector2(-199, -3630)
+
+[node name="level_transtion" parent="." unique_id=1873035785 instance=ExtResource("31_0l8tu")]
+text = "Level 4 "
