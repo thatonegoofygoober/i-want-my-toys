@@ -70,6 +70,7 @@ _data = {
 }
 
 [node name="level_transtion" type="Node2D" unique_id=1873035785]
+visible = false
 script = ExtResource("1_vraky")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1707902908]

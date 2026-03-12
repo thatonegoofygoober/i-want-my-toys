@@ -1,8 +1,9 @@
 extends Node2D
 
 @export var text : String
-
+var ق=  true
 func _ready() -> void:
+	visible = ق
 	$RichTextLabel.text = "[rainbow]" +  text + "[/ranbiow]"
 	$AnimationPlayer.play("fade in")
 	$AnimationPlayer2.play("label fade in")
