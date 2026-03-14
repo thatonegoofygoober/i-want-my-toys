@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://cdei6y8fh56rm" path="res://scripts/texture_rect.gd" id="2_natt5"]
 [ext_resource type="FontFile" uid="uid://djua56p6hjlqa" path="res://Kids Drawing.ttf" id="2_r3g3c"]
 [ext_resource type="Texture2D" uid="uid://cudl3mxxv476n" path="res://Assets/sprites/others/button 2.png" id="2_s5g8n"]
+[ext_resource type="Script" uid="uid://b1rf72o0dgfc0" path="res://scripts/tut.gd" id="4_85riq"]
 [ext_resource type="AudioStream" uid="uid://350cidgbxdti" path="res://Assets/sounds/poopie pack/poopie pack/shop.wav" id="7_85riq"]
 [ext_resource type="Script" uid="uid://dc11rv6a03k7c" path="res://scripts/audio_stream_player.gd" id="7_dfy5j"]
 
@@ -26,13 +27,23 @@ color = Color(0.7690366, 0.43262887, 0.28715318, 1)
 
 [node name="Button" type="TextureButton" parent="." unique_id=771570875]
 layout_mode = 0
-offset_left = 8.0
-offset_top = 360.0
-offset_right = 352.0
-offset_bottom = 496.0
+offset_left = -7.0
+offset_top = 349.0
+offset_right = 337.0
+offset_bottom = 605.0
 texture_normal = ExtResource("1_3vvtq")
 texture_pressed = ExtResource("2_s5g8n")
 script = ExtResource("1_5mbse")
+
+[node name="tut" type="TextureButton" parent="." unique_id=1449220939]
+layout_mode = 0
+offset_left = 274.0
+offset_top = 349.0
+offset_right = 618.0
+offset_bottom = 605.0
+texture_normal = ExtResource("1_3vvtq")
+texture_pressed = ExtResource("2_s5g8n")
+script = ExtResource("4_85riq")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=231969121]
 layout_mode = 0
@@ -51,10 +62,10 @@ scroll_active = false
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=582625538]
 layout_mode = 0
-offset_left = 520.0
-offset_top = 200.0
-offset_right = 992.0
-offset_bottom = 560.0
+offset_left = 536.0
+offset_top = 189.0
+offset_right = 1008.0
+offset_bottom = 549.0
 script = ExtResource("2_natt5")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1140983850]
@@ -63,4 +74,5 @@ autoplay = true
 script = ExtResource("7_dfy5j")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="tut" to="tut" method="_on_pressed"]
 [connection signal="finished" from="AudioStreamPlayer" to="AudioStreamPlayer" method="_on_finished"]
