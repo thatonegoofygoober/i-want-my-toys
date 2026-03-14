@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ckg8je4th06i6"]
 
 [ext_resource type="FontFile" uid="uid://djua56p6hjlqa" path="res://Kids Drawing.ttf" id="1_uhmj3"]
+[ext_resource type="AudioStream" uid="uid://bdt1hq4sfpoet" path="res://Assets/sounds/poopie pack/poopie pack/regrowth wip.wav" id="2_nvx86"]
 
 [node name="Control" type="Control" unique_id=1961740360]
 layout_mode = 3
@@ -28,3 +29,7 @@ theme_override_font_sizes/normal_font_size = 100
 theme_override_font_sizes/bold_font_size = 100
 bbcode_enabled = true
 text = "[wave] [rainbow] [b] you   [/b] beat the game"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2032267538]
+stream = ExtResource("2_nvx86")
+autoplay = true

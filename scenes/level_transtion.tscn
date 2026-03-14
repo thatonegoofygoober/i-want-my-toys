@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ch7a41dguh7bc"]
 
-[ext_resource type="Script" uid="uid://dg314bgc4wcv1" path="res://scenes/level_transtion.gd" id="1_vraky"]
+[ext_resource type="Script" uid="uid://dg314bgc4wcv1" path="res://scripts/level_transtion.gd" id="1_vraky"]
 [ext_resource type="FontFile" uid="uid://djua56p6hjlqa" path="res://Kids Drawing.ttf" id="2_cgwr2"]
 
 [sub_resource type="Animation" id="Animation_3p1qj"]
