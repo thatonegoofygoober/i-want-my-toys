@@ -7683,5 +7683,4 @@ position = Vector2(-194, -3336)
 position = Vector2(-199, -3630)
 
 [node name="level_transtion" parent="." unique_id=1873035785 instance=ExtResource("31_0l8tu")]
-visible = false
 text = "Level 4 "
