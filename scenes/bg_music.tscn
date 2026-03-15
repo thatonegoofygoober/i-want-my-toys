@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://d4i3g8icpohnd"]
+
+[ext_resource type="AudioStream" uid="uid://b75euihyknp6h" path="res://Assets/sounds/poopie pack/poopie pack/start.wav" id="1_3sx0t"]
+[ext_resource type="AudioStream" uid="uid://bnynt7tnd7yh7" path="res://Assets/sounds/poopie pack/poopie pack/blossom.wav" id="1_188bi"]
+[ext_resource type="Script" uid="uid://c3vo8eharx3ql" path="res://scripts/bg_music.gd" id="2_8f2av"]
+[ext_resource type="AudioStream" uid="uid://bdt1hq4sfpoet" path="res://Assets/sounds/poopie pack/poopie pack/regrowth wip.wav" id="3_3sx0t"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_f6gl3"]
+streams_count = 3
+stream_0/stream = ExtResource("1_3sx0t")
+stream_1/stream = ExtResource("1_188bi")
+stream_2/stream = ExtResource("3_3sx0t")
+
+[node name="bg_music" type="AudioStreamPlayer" unique_id=2002786775]
+stream = SubResource("AudioStreamRandomizer_f6gl3")
+volume_db = -4.0
+autoplay = true
+script = ExtResource("2_8f2av")
+
+[connection signal="finished" from="." to="." method="_on_finished"]

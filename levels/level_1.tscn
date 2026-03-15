@@ -23,6 +23,7 @@
 [ext_resource type="FontFile" uid="uid://djua56p6hjlqa" path="res://Kids Drawing.ttf" id="16_udfhf"]
 [ext_resource type="PackedScene" uid="uid://b3qpdc3vv0e8n" path="res://scenes/toy_randomizer.tscn" id="18_oqlok"]
 [ext_resource type="PackedScene" uid="uid://ch7a41dguh7bc" path="res://scenes/level_transtion.tscn" id="23_i6od7"]
+[ext_resource type="PackedScene" uid="uid://d4i3g8icpohnd" path="res://scenes/bg_music.tscn" id="24_ryfpa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lrvbd"]
 texture = ExtResource("1_jirdo")
@@ -3867,3 +3868,5 @@ position = Vector2(-3058, -812)
 
 [node name="level_transtion" parent="." unique_id=1873035785 instance=ExtResource("23_i6od7")]
 text = "Level 1"
+
+[node name="bg_music" parent="." unique_id=2002786775 instance=ExtResource("24_ryfpa")]

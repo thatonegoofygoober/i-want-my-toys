@@ -25,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://b3qpdc3vv0e8n" path="res://scenes/toy_randomizer.tscn" id="20_h351q"]
 [ext_resource type="PackedScene" uid="uid://j18i764g5cx0" path="res://toys/Noliplush.tscn" id="20_he6wg"]
 [ext_resource type="PackedScene" uid="uid://ch7a41dguh7bc" path="res://scenes/level_transtion.tscn" id="25_he6wg"]
+[ext_resource type="PackedScene" uid="uid://d4i3g8icpohnd" path="res://scenes/bg_music.tscn" id="26_jqt73"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lrvbd"]
 texture = ExtResource("2_k2aru")
@@ -7575,3 +7576,5 @@ position = Vector2(5515, 522)
 
 [node name="level_transtion" parent="." unique_id=1873035785 instance=ExtResource("25_he6wg")]
 text = "Level 2"
+
+[node name="bg_music" parent="." unique_id=2002786775 instance=ExtResource("26_jqt73")]

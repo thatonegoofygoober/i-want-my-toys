@@ -31,6 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://b3qpdc3vv0e8n" path="res://scenes/toy_randomizer.tscn" id="26_wred1"]
 [ext_resource type="PackedScene" uid="uid://bvlwoi2klksf6" path="res://scenes/decos/Trashcan_interactable.tscn" id="27_65scv"]
 [ext_resource type="PackedScene" uid="uid://ch7a41dguh7bc" path="res://scenes/level_transtion.tscn" id="31_0l8tu"]
+[ext_resource type="PackedScene" uid="uid://d4i3g8icpohnd" path="res://scenes/bg_music.tscn" id="32_nfoyp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lrvbd"]
 texture = ExtResource("2_0bers")
@@ -7684,3 +7685,5 @@ position = Vector2(-199, -3630)
 
 [node name="level_transtion" parent="." unique_id=1873035785 instance=ExtResource("31_0l8tu")]
 text = "Level 4 "
+
+[node name="bg_music" parent="." unique_id=2002786775 instance=ExtResource("32_nfoyp")]
