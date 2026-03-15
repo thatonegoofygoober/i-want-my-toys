@@ -6,9 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://brrjsmw66cd7s" path="res://Assets/sprites/toys/Teddybear .png" id="2_5oiws"]
 [ext_resource type="Texture2D" uid="uid://dyofqncqhbfe6" path="res://Assets/sprites/decos/Toybox_.png" id="4_5gxqw"]
 [ext_resource type="Texture2D" uid="uid://ctvmx88vnn526" path="res://Assets/sprites/decos/plant.png" id="5_6wmce"]
-[ext_resource type="Texture2D" uid="uid://drtd5d3ufamll" path="res://Assets/sprites/others/button.png" id="7_u2rsq"]
+[ext_resource type="Texture2D" uid="uid://65tgfsmfte14" path="res://Assets/sprites/others/buttonhaha.png" id="8_5n8mi"]
 [ext_resource type="Texture2D" uid="uid://cudl3mxxv476n" path="res://Assets/sprites/others/button 2.png" id="8_rl53y"]
 [ext_resource type="Script" uid="uid://bcvs5f405ds04" path="res://scripts/button.gd" id="9_5n8mi"]
+[ext_resource type="PackedScene" uid="uid://cg1q1hgi61dfl" path="res://scenes/camera_2d.tscn" id="10_rl53y"]
 
 [sub_resource type="Animation" id="Animation_5gxqw"]
 length = 0.001
@@ -69,10 +70,10 @@ script = ExtResource("1_44u3o")
 
 [node name="bg" type="ColorRect" parent="." unique_id=224349418]
 layout_mode = 0
-offset_left = -19205.0
-offset_top = -10358.0
-offset_right = 25311.0
-offset_bottom = 13064.0
+offset_left = -25563.0
+offset_top = -11721.0
+offset_right = 18953.0
+offset_bottom = 11701.0
 color = Color(0, 0, 0, 1)
 
 [node name="L1" type="Label" parent="." unique_id=1549755086]
@@ -117,9 +118,9 @@ rect = Rect2(-10, -10, 943, 68)
 [node name="L3" type="Label" parent="." unique_id=1266021463]
 z_index = 5
 layout_mode = 0
-offset_left = 1708.0
+offset_left = 1642.0
 offset_top = 218.0
-offset_right = 2993.0
+offset_right = 2927.0
 offset_bottom = 374.0
 theme_override_fonts/font = ExtResource("1_gghcp")
 theme_override_font_sizes/font_size = 49
@@ -160,23 +161,18 @@ texture = ExtResource("2_5oiws")
 position = Vector2(390, 367)
 texture = ExtResource("5_6wmce")
 
-[node name="Button" type="TextureButton" parent="." unique_id=578836176]
+[node name="Camera2D" parent="." unique_id=691893083 instance=ExtResource("10_rl53y")]
+position = Vector2(1997, 327)
+
+[node name="Button" type="TextureButton" parent="." unique_id=233701178]
 layout_mode = 0
-offset_left = 4827.0
-offset_top = 485.0
-offset_right = 5171.0
-offset_bottom = 741.0
-texture_normal = ExtResource("7_u2rsq")
+offset_left = 4816.9995
+offset_top = 399.00003
+offset_right = 5160.9995
+offset_bottom = 655.0
+scale = Vector2(1.595, 1.595)
+texture_normal = ExtResource("8_5n8mi")
 texture_pressed = ExtResource("8_rl53y")
 script = ExtResource("9_5n8mi")
-
-[node name="Fader" type="Node2D" parent="Button" unique_id=2104912831 node_paths=PackedStringArray("on_screen")]
-script = ExtResource("2_5gxqw")
-time = 1.0
-on_screen = NodePath("../../L2/VisibleOnScreenNotifier2D")
-metadata/_custom_type_script = "uid://d2vsnvl63wr1h"
-
-[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="Button" unique_id=663547012]
-rect = Rect2(19, 33, 249, 217)
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
