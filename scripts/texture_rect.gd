@@ -1,4 +1,4 @@
-extends TextureRect
+extends Sprite2D
 
 var toy_textires : Array = [preload(
 "res://Assets/sprites/toys/mycoolball.png"),

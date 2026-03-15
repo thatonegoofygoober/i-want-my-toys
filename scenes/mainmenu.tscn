@@ -28,19 +28,21 @@ color = Color(0.7690366, 0.43262887, 0.28715318, 1)
 [node name="Button" type="TextureButton" parent="." unique_id=771570875]
 layout_mode = 0
 offset_left = -7.0
-offset_top = 349.0
+offset_top = 675.0
 offset_right = 337.0
-offset_bottom = 605.0
+offset_bottom = 931.0
+scale = Vector2(1.595, 1.595)
 texture_normal = ExtResource("1_3vvtq")
 texture_pressed = ExtResource("2_s5g8n")
 script = ExtResource("1_5mbse")
 
 [node name="tut" type="TextureButton" parent="." unique_id=1449220939]
 layout_mode = 0
-offset_left = 274.0
-offset_top = 349.0
-offset_right = 618.0
-offset_bottom = 605.0
+offset_left = 431.0
+offset_top = 691.0
+offset_right = 775.0
+offset_bottom = 947.0
+scale = Vector2(1.5, 1.5)
 texture_normal = ExtResource("1_3vvtq")
 texture_pressed = ExtResource("2_s5g8n")
 script = ExtResource("4_85riq")
@@ -53,19 +55,16 @@ offset_right = 696.0
 offset_bottom = 432.0
 theme_override_fonts/normal_font = ExtResource("2_r3g3c")
 theme_override_fonts/bold_font = ExtResource("2_r3g3c")
-theme_override_font_sizes/normal_font_size = 100
+theme_override_font_sizes/normal_font_size = 142
 theme_override_font_sizes/bold_font_size = 100
 bbcode_enabled = true
 text = "I want My [b]
 [rainbow]TOYS[/rainbow][/b] "
 scroll_active = false
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=582625538]
-layout_mode = 0
-offset_left = 536.0
-offset_top = 189.0
-offset_right = 1008.0
-offset_bottom = 549.0
+[node name="TextureRect" type="Sprite2D" parent="." unique_id=1848195083]
+position = Vector2(1401, 661)
+scale = Vector2(1.605, 1.605)
 script = ExtResource("2_natt5")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1140983850]
