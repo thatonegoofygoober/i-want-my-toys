@@ -19,6 +19,7 @@ var tran_colors := start_color.lerp(end_color,1.0)
 var color_time :float = 0.0
 var time_cangodown : bool = true
 func _ready() -> void:
+	TimeBeat.cuese(true)
 	time = clamp(time,0,time)
 func _process(delta: float) -> void:
 	secs = int(time) % 60

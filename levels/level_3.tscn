@@ -7584,7 +7584,7 @@ position = Vector2(4134, 605)
 position = Vector2(6745, 673)
 
 [node name="Marker2D17" type="Marker2D" parent="markers" unique_id=1850964702 groups=["marker", "markers"]]
-position = Vector2(5504, 520)
+position = Vector2(5552, 520)
 
 [node name="Marker2D18" type="Marker2D" parent="markers" unique_id=132938752 groups=["marker", "markers"]]
 position = Vector2(-1960, -2368)

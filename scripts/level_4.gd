@@ -20,6 +20,7 @@ var color_time :float = 0.0
 var time_cangodown : bool = true
 func _ready() -> void:
 	time = clamp(time,0,time)
+	TimeBeat.cuese(true)
 func _process(delta: float) -> void:
 	secs = int(time) % 60
 	mins = int(time) / 60

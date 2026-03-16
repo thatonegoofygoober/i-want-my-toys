@@ -13,6 +13,8 @@ var mins : int = int(time) / 60
 var can_be_red : bool = false
 var tran_colors := start_color.lerp(end_color,1.0)
 var color_time :float = 0.0
+func _ready() -> void:
+	TimeBeat.cuese(true)
 func _process(delta: float) -> void:
 	secs = int(time) % 60
 	mins = int(time) / 60

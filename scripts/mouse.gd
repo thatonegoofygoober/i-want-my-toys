@@ -21,5 +21,5 @@ func _input(event: InputEvent) -> void:
 			Input.set_custom_mouse_cursor(cursor,Input.CURSOR_ARROW,Vector2(70,70))
 			Input.set_custom_mouse_cursor(grab_cursor,Input.CURSOR_POINTING_HAND,Vector2(70,70))
 
-func _draw():
-	draw_circle(mouse_pos,20.0,Color.BLUE,true,1.0)
+#func _draw():
+	#draw_circle(mouse_pos,20.0,Color.BLUE,true,1.0)

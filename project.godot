@@ -20,6 +20,7 @@ config/icon="uid://c5tk3s1txnb6h"
 
 MaketoysVisible="uid://cawjgumxxiqvw"
 Mouse="*uid://uciv4bq4n3rl"
+TimeBeat="*uid://c2qesbe358hhu"
 
 [debug]
 
