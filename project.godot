@@ -19,7 +19,7 @@ config/icon="uid://c5tk3s1txnb6h"
 [autoload]
 
 MaketoysVisible="uid://cawjgumxxiqvw"
-Mouse="uid://uciv4bq4n3rl"
+Mouse="*uid://uciv4bq4n3rl"
 
 [debug]
 
@@ -30,7 +30,6 @@ gdscript/warnings/untyped_declaration=1
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/stretch/mode="canvas_items"
-mouse_cursor/custom_image="uid://du5pqmjane854"
 mouse_cursor/custom_image_hotspot=Vector2(70, 70)
 
 [file_customization]
