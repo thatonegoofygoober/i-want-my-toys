@@ -7375,10 +7375,10 @@ time = 120.0
 
 [node name="ColorRect" type="ColorRect" parent="bg/room1" unique_id=1241741479]
 z_index = -5
-offset_left = -14325.0
-offset_top = -17914.0
-offset_right = 17118.0
-offset_bottom = 4345.0
+offset_left = -14328.0
+offset_top = -17912.0
+offset_right = 17115.0
+offset_bottom = 4347.0
 pivot_offset = Vector2(19910, 13376)
 mouse_filter = 2
 
@@ -7545,132 +7545,171 @@ markers = [NodePath("../markers/Marker2D"), NodePath("../markers/Marker2D2"), No
 
 [node name="Marker2D" type="Marker2D" parent="markers" unique_id=1954102648 groups=["marker", "markers"]]
 position = Vector2(-450, -324)
+gizmo_extents = 1098.0
 
 [node name="Marker2D2" type="Marker2D" parent="markers" unique_id=522866964 groups=["marker", "markers"]]
 position = Vector2(-408, 622)
+gizmo_extents = 1098.0
 
 [node name="Marker2D3" type="Marker2D" parent="markers" unique_id=458781749 groups=["marker", "markers"]]
 position = Vector2(1766, 514)
+gizmo_extents = 1098.0
 
 [node name="Marker2D4" type="Marker2D" parent="markers" unique_id=1929006883 groups=["marker", "markers"]]
 position = Vector2(2057, -251)
+gizmo_extents = 1098.0
 
 [node name="Marker2D5" type="Marker2D" parent="markers" unique_id=829035701 groups=["marker", "markers"]]
 position = Vector2(2142, 643)
+gizmo_extents = 1098.0
 
 [node name="Marker2D6" type="Marker2D" parent="markers" unique_id=1816639054 groups=["marker", "markers"]]
 position = Vector2(4998, 544)
+gizmo_extents = 1098.0
 
 [node name="Marker2D7" type="Marker2D" parent="markers" unique_id=1002856280 groups=["marker", "markers"]]
 position = Vector2(2031, -995)
+gizmo_extents = 1098.0
 
 [node name="Marker2D8" type="Marker2D" parent="markers" unique_id=108787091 groups=["marker", "markers"]]
 position = Vector2(-1643, -728)
+gizmo_extents = 1098.0
 
 [node name="Marker2D9" type="Marker2D" parent="markers" unique_id=260380760 groups=["marker", "markers"]]
 position = Vector2(-3083, -313)
+gizmo_extents = 1098.0
 
 [node name="Marker2D10" type="Marker2D" parent="markers" unique_id=1067955060 groups=["marker", "markers"]]
 position = Vector2(-1848, 670)
+gizmo_extents = 1098.0
 
 [node name="Marker2D11" type="Marker2D" parent="markers" unique_id=1231337133 groups=["marker", "markers"]]
 position = Vector2(-3016, 592)
+gizmo_extents = 1098.0
 
 [node name="Marker2D12" type="Marker2D" parent="markers" unique_id=1358622914 groups=["marker", "markers"]]
 position = Vector2(3974, -456)
+gizmo_extents = 1098.0
 
 [node name="Marker2D13" type="Marker2D" parent="markers" unique_id=55905729 groups=["marker", "markers"]]
 position = Vector2(4206, -1438)
+gizmo_extents = 1098.0
 
 [node name="Marker2D14" type="Marker2D" parent="markers" unique_id=1195171745 groups=["marker", "markers"]]
 position = Vector2(6725, -1263)
+gizmo_extents = 1098.0
 
 [node name="Marker2D15" type="Marker2D" parent="markers" unique_id=2134577462 groups=["marker", "markers"]]
 position = Vector2(4134, 605)
+gizmo_extents = 1098.0
 
 [node name="Marker2D16" type="Marker2D" parent="markers" unique_id=934884188 groups=["marker", "markers"]]
 position = Vector2(6745, 673)
+gizmo_extents = 1098.0
 
 [node name="Marker2D17" type="Marker2D" parent="markers" unique_id=1850964702 groups=["marker", "markers"]]
 position = Vector2(5504, 520)
+gizmo_extents = 1098.0
 
 [node name="Marker2D18" type="Marker2D" parent="markers" unique_id=132938752 groups=["marker", "markers"]]
 position = Vector2(-1960, -2368)
+gizmo_extents = 1098.0
 
 [node name="Marker2D19" type="Marker2D" parent="markers" unique_id=314059397 groups=["marker", "markers"]]
 position = Vector2(-1728, -2608)
+gizmo_extents = 1098.0
 
 [node name="Marker2D20" type="Marker2D" parent="markers" unique_id=647661938 groups=["marker", "markers"]]
 position = Vector2(-1232, -2344)
+gizmo_extents = 1098.0
 
 [node name="Marker2D21" type="Marker2D" parent="markers" unique_id=710870137 groups=["marker", "markers"]]
 position = Vector2(304, -2664)
+gizmo_extents = 1098.0
 
 [node name="Marker2D22" type="Marker2D" parent="markers" unique_id=1146670770 groups=["marker", "markers"]]
 position = Vector2(520, -2392)
+gizmo_extents = 1098.0
 
 [node name="Marker2D23" type="Marker2D" parent="markers" unique_id=744348517 groups=["marker", "markers"]]
 position = Vector2(800, -2560)
+gizmo_extents = 1098.0
 
 [node name="Marker2D24" type="Marker2D" parent="markers" unique_id=1365238955 groups=["marker", "markers"]]
 position = Vector2(2416, -2360)
+gizmo_extents = 1098.0
 
 [node name="Marker2D25" type="Marker2D" parent="markers" unique_id=2075724682 groups=["marker", "markers"]]
 position = Vector2(3192, -2472)
+gizmo_extents = 1098.0
 
 [node name="Marker2D26" type="Marker2D" parent="markers" unique_id=372678879 groups=["marker", "markers"]]
 position = Vector2(3904, -2600)
+gizmo_extents = 1098.0
 
 [node name="Marker2D27" type="Marker2D" parent="markers" unique_id=660457970 groups=["marker", "markers"]]
 position = Vector2(3968, -2400)
+gizmo_extents = 1098.0
 
 [node name="Marker2D28" type="Marker2D" parent="markers" unique_id=1631595861 groups=["marker", "markers"]]
 position = Vector2(3512, -3096)
+gizmo_extents = 1098.0
 
 [node name="Marker2D29" type="Marker2D" parent="markers" unique_id=270272403 groups=["marker", "markers"]]
 position = Vector2(3648, -4048)
+gizmo_extents = 1098.0
 
 [node name="Marker2D32" type="Marker2D" parent="markers" unique_id=742141678 groups=["marker", "markers"]]
 position = Vector2(-2152, -3952)
+gizmo_extents = 1098.0
 
 [node name="Marker2D33" type="Marker2D" parent="markers" unique_id=1769089314 groups=["marker", "markers"]]
 position = Vector2(-765, -6952)
+gizmo_extents = 1098.0
 
 [node name="Marker2D34" type="Marker2D" parent="markers" unique_id=1474956413 groups=["marker", "markers"]]
 position = Vector2(-368, -6096)
+gizmo_extents = 1098.0
 
 [node name="Marker2D35" type="Marker2D" parent="markers" unique_id=627893536 groups=["marker", "markers"]]
 position = Vector2(-856, -6079)
-
-[node name="Marker2D36" type="Marker2D" parent="markers" unique_id=605434707 groups=["marker", "markers"]]
-position = Vector2(1080, -6088)
+gizmo_extents = 1098.0
 
 [node name="Marker2D37" type="Marker2D" parent="markers" unique_id=840936119 groups=["marker", "markers"]]
-position = Vector2(1080, -6088)
+position = Vector2(1153, -6088)
+gizmo_extents = 1098.0
 
 [node name="Marker2D38" type="Marker2D" parent="markers" unique_id=1979594966 groups=["marker", "markers"]]
 position = Vector2(1592, -6008)
+gizmo_extents = 1098.0
 
 [node name="Marker2D39" type="Marker2D" parent="markers" unique_id=112002437 groups=["marker", "markers"]]
 position = Vector2(2237, -6640)
+gizmo_extents = 1098.0
 
 [node name="Marker2D40" type="Marker2D" parent="markers" unique_id=1410599249 groups=["marker", "markers"]]
 position = Vector2(2952, -6064)
+gizmo_extents = 1098.0
 
 [node name="Marker2D41" type="Marker2D" parent="markers" unique_id=44702147 groups=["marker", "markers"]]
 position = Vector2(3504, -6064)
+gizmo_extents = 1098.0
 
 [node name="Marker2D42" type="Marker2D" parent="markers" unique_id=1498521771 groups=["marker", "markers"]]
-position = Vector2(2133, -6064)
+position = Vector2(2048, -6064)
+gizmo_extents = 1098.0
 
 [node name="Marker2D43" type="Marker2D" parent="markers" unique_id=928826906 groups=["marker", "markers"]]
 position = Vector2(-2096, -6064)
+gizmo_extents = 1098.0
 
 [node name="Marker2D44" type="Marker2D" parent="markers" unique_id=1312799006 groups=["marker", "markers"]]
 position = Vector2(-2264, -7648)
+gizmo_extents = 1098.0
 
 [node name="Marker2D45" type="Marker2D" parent="markers" unique_id=1679100622 groups=["marker", "markers"]]
 position = Vector2(-1830, -9240)
+gizmo_extents = 1098.0
 
 [node name="interactble_toy2" parent="." unique_id=1827700374 node_paths=PackedStringArray("spawnpoint", "toy_spawn") instance=ExtResource("27_65scv")]
 position = Vector2(458, 3955)
